@@ -1,14 +1,8 @@
 <template>
-  <MainNav />
+  <main-nav />
+  <router-view />
 </template>
 
-<script>
-import MainNav from "@/components/MainNav.vue";
-
-export default {
-  name: "App",
-  components: {
-    MainNav: MainNav,
-  },
-};
+<script lang="ts" setup>
+import MainNav from "./components/Navigation/MainNav.vue";
 </script>
